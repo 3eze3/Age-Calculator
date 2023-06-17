@@ -1,0 +1,46 @@
+@font-face {
+  font-family: popins_bold;
+  src: url("../../build/assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: popins_extra_bold;
+  src: url("../../build/assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: popins_regular;
+  src: url("../../build/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: popins_italic;
+  src: url("../../build/assets/fonts/Poppins-Italic.ttf");
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// - Weights: 400i, 700, 800i
+
+h1,
+span {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  font-size: 32px;
+}
+label {
+}
+button {
+}
