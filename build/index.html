@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/date_cal.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -13,14 +14,34 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    <!--  -->
-    Day DD
-    <!--  -->
-    Month MM
-    <!--  -->
-    Year YYYY
-    <!--  -->
-    -- years -- months -- days
-    <!--  -->
+    <main>
+      <section>
+        <h1>Calculator of years in the past</h1>
+        <!-- Consultas de fechas/formulario  -->
+        <form action="#">
+          <label>
+            Day
+            <input type="text" placeholder="DD" />
+          </label>
+          <label>
+            Month
+            <input type="text" placeholder="MM" />
+          </label>
+          <label>
+            Year
+            <input type="text" placeholder="YYYY" />
+          </label>
+          <!-- Disenio button -->
+          <button></button>
+        </form>
+        <!-- Show the result render component -->
+        <div>
+          <p><span>--</span>years</p>
+          <p><span>--</span>months</p>
+          <p><span>--</span>days</p>
+        </div>
+        <!--  -->
+      </section>
+    </main>
   </body>
 </html>
