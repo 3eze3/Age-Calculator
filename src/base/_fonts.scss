@@ -1,3 +1,4 @@
+@use "../abtract/variables" as colors_bg;
 @font-face {
   font-family: popins_bold;
   src: url("../../build/assets/fonts/Poppins-Bold.ttf");
@@ -5,7 +6,7 @@
 
 @font-face {
   font-family: popins_extra_bold;
-  src: url("../../build/assets/fonts/Poppins-ExtraBold.ttf");
+  src: url("../../build/assets/fonts/Poppins-ExtraBoldItalic.ttf");
 }
 
 @font-face {
@@ -13,34 +14,56 @@
   src: url("../../build/assets/fonts/Poppins-Regular.ttf");
 }
 
-@font-face {
-  font-family: popins_italic;
-  src: url("../../build/assets/fonts/Poppins-Italic.ttf");
-}
-
 body {
-  min-height: 100vh;
-  font-size: 100%;
+  min-height: 100dvh;
+  font-family: popins_regular;
   hyphens: manual;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-// - Weights: 400i, 700, 800i
 
-h1,
+h1 {
+  width: 1px;
+  height: 1px;
+  top: -50rem;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+p {
+  font-size: colors_bg.$lg;
+  font-family: popins_extra_bold;
+  color: colors_bg.$off-black;
+}
+
 span {
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
+  color: colors_bg.$purple;
 }
 
 input {
-  font-size: 32px;
+  font-size: colors_bg.$md;
+  font-family: popins_bold;
+  color: colors_bg.$smokey-grey;
+  border: solid 1px colors_bg.$light-grey;
 }
+
 label {
+  font-size: colors_bg.$sm;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  color: colors_bg.$smokey-grey;
 }
+
 button {
+  background-color: colors_bg.$purple;
+}
+
+main {
+  background-color: colors_bg.$off-white;
+}
+
+section {
+  background-color: colors_bg.$white;
 }
