@@ -14,32 +14,47 @@
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
-    <main>
-      <section>
-        <h1>Calculator of years in the past</h1>
+    <main class="card">
+      <section class="card__content">
+        <h1 class="card__title">Calculator of years in the past</h1>
         <!-- Consultas de fechas/formulario  -->
-        <form action="#">
-          <label>
+        <!-- Component -->
+        <form class="card__form form" action="#">
+          <label class="form__label">
             DAY
-            <input type="text" placeholder="DD" />
+            <input class="form__input" type="text" placeholder="DD" />
           </label>
-          <label>
+          <label class="form__label">
             MONTH
-            <input type="text" placeholder="MM" />
+            <input class="form__input" type="text" placeholder="MM" />
           </label>
-          <label>
+          <label class="form__label">
             YEAR
-            <input type="text" placeholder="YYYY" />
+            <input class="form__input" type="text" placeholder="YYYY" />
           </label>
           <!-- Disenio button -->
-          <button aria-label="Send the date"></button>
-          <img src="assets/images/icon-arrow.svg" alt aria-hidden="true" />
+          <button class="form__button" aria-label="Send the date">
+            <img
+              class="form__"
+              src="assets/images/icon-arrow.svg"
+              alt
+              aria-hidden="true" />
+          </button>
         </form>
         <!-- Show the result render component -->
-        <div>
-          <p><span>--</span>years</p>
-          <p><span>--</span>months</p>
-          <p><span>--</span>days</p>
+        <div class="card__wrapper">
+          <p class="card__result">
+            <span class="card__result card__result--years">--</span>
+            years
+          </p>
+          <p class="card__result">
+            <span class="card__result card__result--months">--</span>
+            months
+          </p>
+          <p class="card__result">
+            <span class="card__result card__result--days">--</span>
+            days
+          </p>
         </div>
         <!--  -->
       </section>
