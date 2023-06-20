@@ -1,0 +1,12 @@
+.card {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  &__content {
+    max-width: 51rem;
+    height: 42rem;
+    border-radius: 1.75rem 1.75rem 12rem 1.75rem;
+    padding: 3.5rem;
+  }
+}
