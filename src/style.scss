@@ -1,3 +1,6 @@
 // Reset for the components
 @use "base/reset";
 @use "base/fonts";
+// Layout
+@use "layout/card";
+@use "components/form";
