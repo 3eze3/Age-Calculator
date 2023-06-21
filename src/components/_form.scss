@@ -2,17 +2,28 @@
 @use "../abtract/variables" as colors_bg;
 .form {
   width: 100%;
-  @include layout.flex($justify: flex-start, $direction: row, $gap: 2rem);
   padding-bottom: 3rem;
-  border-bottom: solid colors_bg.$off-white 1px;
   position: relative;
+  @include layout.flex($justify: center, $direction: row, $gap: 2rem);
+  border-bottom: solid colors_bg.$off-white 1px;
+  @include layout.media-break() {
+    @include layout.flex($justify: center, $direction: row, $gap: 1rem);
+    margin-bottom: 3.8rem;
+    padding-bottom: 5rem;
+  }
   &__label {
     width: 22%;
     @include layout.flex($aling: flex-start, $gap: 0.35rem);
+    @include layout.media-break() {
+      width: 100%;
+    }
   }
   &__input {
     padding: 0.5rem;
     border-radius: 0.65rem;
+    @include layout.media-break() {
+      padding: 0.65rem 0.85rem;
+    }
   }
   &__button {
     width: 6rem;
@@ -22,5 +33,12 @@
     position: absolute;
     bottom: -3rem;
     right: 0;
+    @include layout.media-break() {
+      width: 4.5rem;
+      height: 4.5rem;
+      padding: 1rem;
+      bottom: -2.25rem;
+      right: calc(50% - 2.25rem);
+    }
   }
 }
