@@ -36,6 +36,7 @@ p {
   font-size: colors_bg.$lg;
   font-family: popins_extra_bold;
   color: colors_bg.$off-black;
+  margin-bottom: -2.8rem;
 }
 
 span {
@@ -46,8 +47,11 @@ input {
   width: 100%;
   font-size: colors_bg.$md;
   font-family: popins_bold;
-  color: colors_bg.$smokey-grey;
   border: solid 1px colors_bg.$light-grey;
+  color: colors_bg.$off-black;
+  &::placeholder {
+    color: colors_bg.$smokey-grey;
+  }
 }
 
 label {
