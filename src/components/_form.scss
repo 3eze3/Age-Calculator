@@ -43,3 +43,10 @@
     }
   }
 }
+.error-label {
+  color: colors_bg.$light-red;
+}
+
+.error-input {
+  outline-color: colors_bg.$light-red;
+}
