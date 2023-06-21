@@ -1,4 +1,5 @@
 @use "../abtract/variables" as colors_bg;
+@use "../abtract/mixins" as layout;
 @font-face {
   font-family: popins_bold;
   src: url("../../build/assets/fonts/Poppins-Bold.ttf");
@@ -37,6 +38,11 @@ p {
   font-family: popins_extra_bold;
   color: colors_bg.$off-black;
   margin-bottom: -2.8rem;
+
+  @include layout.media-break() {
+    font-size: 4rem;
+    margin-bottom: -1.5rem;
+  }
 }
 
 span {
@@ -52,13 +58,18 @@ input {
   &::placeholder {
     color: colors_bg.$smokey-grey;
   }
+  @include layout.media-break() {
+    font-size: 1.5rem;
+  }
 }
 
 label {
   font-size: colors_bg.$sm;
   font-weight: 800;
   letter-spacing: 0.15em;
-  color: colors_bg.$smokey-grey;
+  @include layout.media-break() {
+    font-size: 0.8rem;
+  }
 }
 
 button {
