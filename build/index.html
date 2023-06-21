@@ -20,14 +20,16 @@
           <label class="form__label">
             DAY
             <input id="days" class="form__input" type="text" placeholder="DD" />
+            <em class="form__error form__error--day"></em>
           </label>
           <label class="form__label">
             MONTH
             <input
-              id="montsh"
+              id="months"
               class="form__input"
               type="text"
               placeholder="MM" />
+            <em class="form__error form__error--month"> </em>
           </label>
           <label class="form__label">
             YEAR
@@ -36,6 +38,7 @@
               class="form__input"
               type="text"
               placeholder="YYYY" />
+            <em class="form__error form__error--year"> </em>
           </label>
           <button class="form__button" aria-label="Send the date">
             <img
