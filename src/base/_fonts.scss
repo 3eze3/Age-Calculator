@@ -86,6 +86,14 @@ button {
   }
 }
 
+em {
+  font-size: 0.65em;
+  position: absolute;
+  bottom: 1.5rem;
+  color: colors_bg.$light-red;
+  opacity: 0;
+}
+
 main {
   background-color: colors_bg.$off-white;
 }
