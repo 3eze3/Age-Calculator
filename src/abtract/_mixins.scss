@@ -6,7 +6,7 @@
   gap: $gap;
 }
 
-@mixin media-break($media: min-width, $break: 730px) {
+@mixin media-break($media: max-width, $break: 490px) {
   @media screen and ($media: $break) {
     @content;
   }
