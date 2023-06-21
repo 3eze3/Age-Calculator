@@ -4,7 +4,7 @@
   width: 100%;
   padding-bottom: 3rem;
   position: relative;
-  @include layout.flex($justify: center, $direction: row, $gap: 2rem);
+  @include layout.flex($justify: flex-start, $direction: row, $gap: 2rem);
   border-bottom: solid colors_bg.$off-white 1px;
   @include layout.media-break() {
     @include layout.flex($justify: center, $direction: row, $gap: 1rem);
@@ -33,6 +33,7 @@
     position: absolute;
     bottom: -3rem;
     right: 0;
+    cursor: pointer;
     @include layout.media-break() {
       width: 4.5rem;
       height: 4.5rem;
