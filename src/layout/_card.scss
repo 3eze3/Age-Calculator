@@ -1,12 +1,20 @@
+@use "../abtract/mixins" as layout;
 .card {
   width: 100%;
   min-height: 100dvh;
   display: grid;
   place-content: center;
+  @include layout.media-break() {
+    padding: 1.5rem 1rem;
+  }
   &__content {
     max-width: 50rem;
     height: 38rem;
-    border-radius: 1.75rem 1.75rem 12rem 1.75rem;
     padding: 3.5rem;
+    border-radius: 1.75rem 1.75rem 12rem 1.75rem;
+    @include layout.media-break() {
+      padding: 2rem;
+      border-radius: 1.75rem 1.75rem 9rem 1.75rem;
+    }
   }
 }
