@@ -53,10 +53,15 @@ input {
   width: 100%;
   font-size: colors_bg.$md;
   font-family: popins_bold;
-  border: solid 1px colors_bg.$light-grey;
+  outline: solid 1px colors_bg.$light-grey;
   color: colors_bg.$off-black;
+  transition: outline 0.2s ease;
   &::placeholder {
     color: colors_bg.$smokey-grey;
+  }
+  &:focus {
+    outline: solid 1px colors_bg.$purple;
+    transition: outline 0.2s ease;
   }
   @include layout.media-break() {
     font-size: 1.5rem;
@@ -74,6 +79,11 @@ label {
 
 button {
   background-color: colors_bg.$purple;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: colors_bg.$off-black;
+    transition: background-color 0.3s ease;
+  }
 }
 
 main {
