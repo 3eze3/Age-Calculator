@@ -10,7 +10,6 @@
       type="image/png"
       sizes="32x32"
       href="./assets/images/favicon-32x32.png" />
-
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
@@ -20,15 +19,23 @@
         <form class="card__form form" action="#">
           <label class="form__label">
             DAY
-            <input class="form__input" type="text" placeholder="DD" />
+            <input id="days" class="form__input" type="text" placeholder="DD" />
           </label>
           <label class="form__label">
             MONTH
-            <input class="form__input" type="text" placeholder="MM" />
+            <input
+              id="montsh"
+              class="form__input"
+              type="text"
+              placeholder="MM" />
           </label>
           <label class="form__label">
             YEAR
-            <input class="form__input" type="text" placeholder="YYYY" />
+            <input
+              id="years"
+              class="form__input"
+              type="text"
+              placeholder="YYYY" />
           </label>
           <button class="form__button" aria-label="Send the date">
             <img
