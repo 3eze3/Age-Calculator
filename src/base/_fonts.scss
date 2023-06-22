@@ -92,6 +92,11 @@ em {
   bottom: 1.5rem;
   color: colors_bg.$light-red;
   opacity: 0;
+  transition: opacity 0.2s ease;
+  @include layout.media-break() {
+    bottom: 2.8rem;
+    font-size: 0.85em;
+  }
 }
 
 main {
