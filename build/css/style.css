@@ -1,0 +1,250 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+form {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: manual;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  appearance: none;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+@font-face {
+  font-family: popins_bold;
+  src: url("../../build/assets/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: popins_extra_bold;
+  src: url("../../build/assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: popins_regular;
+  src: url("../../build/assets/fonts/Poppins-Regular.ttf");
+}
+body {
+  min-height: 100dvh;
+  font-family: popins_regular;
+  hyphens: manual;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  width: 1px;
+  height: 1px;
+  top: -50rem;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+p {
+  font-size: 6.5em;
+  font-family: popins_extra_bold;
+  color: hsl(0deg, 0%, 8%);
+  margin-bottom: -2.8rem;
+}
+@media screen and (max-width: 490px) {
+  p {
+    font-size: 4rem;
+    margin-bottom: -1.5rem;
+  }
+}
+
+span {
+  color: hsl(259deg, 100%, 65%);
+}
+
+input {
+  width: 100%;
+  font-size: 2.3em;
+  font-family: popins_bold;
+  outline: solid 1px hsl(0deg, 0%, 86%);
+  color: hsl(0deg, 0%, 8%);
+  transition: outline 0.2s ease;
+}
+input::placeholder {
+  color: hsl(0deg, 1%, 44%);
+}
+input:focus {
+  outline: solid 1px hsl(259deg, 100%, 65%);
+  transition: outline 0.2s ease;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media screen and (max-width: 490px) {
+  input {
+    font-size: 1.5rem;
+  }
+}
+
+label {
+  font-size: 0.9em;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+@media screen and (max-width: 490px) {
+  label {
+    font-size: 0.8rem;
+  }
+}
+
+button {
+  background-color: hsl(259deg, 100%, 65%);
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: hsl(0deg, 0%, 8%);
+  transition: background-color 0.3s ease;
+}
+
+em {
+  font-size: 0.65em;
+  position: absolute;
+  bottom: 1.5rem;
+  color: hsl(0deg, 100%, 67%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+@media screen and (max-width: 490px) {
+  em {
+    bottom: 2.8rem;
+    font-size: 0.85em;
+  }
+}
+
+main {
+  background-color: hsl(0deg, 0%, 94%);
+}
+
+section {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.card {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+}
+@media screen and (max-width: 490px) {
+  .card {
+    padding: 1.5rem 1rem;
+  }
+}
+.card__content {
+  max-width: 50rem;
+  height: 38rem;
+  padding: 3.5rem;
+  border-radius: 1.75rem 1.75rem 12rem 1.75rem;
+}
+@media screen and (max-width: 490px) {
+  .card__content {
+    padding: 2rem;
+    border-radius: 1.75rem 1.75rem 9rem 1.75rem;
+  }
+}
+
+.form {
+  width: 100%;
+  padding-bottom: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  border-bottom: solid hsl(0deg, 0%, 94%) 1px;
+}
+@media screen and (max-width: 490px) {
+  .form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3.8rem;
+    padding-bottom: 5rem;
+  }
+}
+.form__label {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.35rem;
+}
+@media screen and (max-width: 490px) {
+  .form__label {
+    width: 100%;
+  }
+}
+.form__input {
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+@media screen and (max-width: 490px) {
+  .form__input {
+    padding: 0.65rem 0.85rem;
+  }
+}
+.form__button {
+  width: 6rem;
+  height: 6rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3rem;
+  right: 0;
+  cursor: pointer;
+}
+@media screen and (max-width: 490px) {
+  .form__button {
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: 1rem;
+    bottom: -2.25rem;
+    right: calc(50% - 2.25rem);
+  }
+}
+
+.error-label {
+  color: hsl(0deg, 100%, 67%);
+}
+
+.error-input {
+  outline-color: hsl(0deg, 100%, 67%);
+}
+
+/*# sourceMappingURL=style.css.map */
