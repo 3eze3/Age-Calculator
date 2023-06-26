@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/date_cal.js" defer></script>
     <link
       rel="icon"
       type="image/png"
@@ -19,17 +18,29 @@
         <form class="card__form form" action="#">
           <label class="form__label">
             DAY
-            <input id="days" class="form__input" type="text" placeholder="DD" />
+            <input
+              id="days"
+              class="form__input"
+              type="number"
+              placeholder="DD" />
             <em class="form__error form__error--day"></em>
           </label>
           <label class="form__label">
             MONTH
-            <input id="months" class="form__input" type="text" placeholder="MM" />
+            <input
+              id="months"
+              class="form__input"
+              type="number"
+              placeholder="MM" />
             <em class="form__error form__error--month"> </em>
           </label>
           <label class="form__label">
             YEAR
-            <input id="years" class="form__input" type="text" placeholder="YYYY" />
+            <input
+              id="years"
+              class="form__input"
+              type="number"
+              placeholder="YYYY" />
             <em class="form__error form__error--year"> </em>
           </label>
           <button class="form__button" aria-label="Send the date">
