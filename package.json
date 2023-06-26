@@ -1,0 +1,29 @@
+{
+  "name": "age-calculator-app-main",
+  "version": "1.0.0",
+  "description": "![Design preview for the Age calculator app coding challenge](build/assets/images/desktop-preview.jpg)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3eze3/Age-Calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3eze3/Age-Calculator/issues"
+  },
+  "homepage": "https://github.com/3eze3/Age-Calculator#readme",
+  "devDependencies": {
+    "standard": "^17.1.0",
+    "vitest": "0.32.2"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
