@@ -63,6 +63,12 @@ input {
     outline: solid 1px colors_bg.$purple;
     transition: outline 0.2s ease;
   }
+
+  &[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   @include layout.media-break() {
     font-size: 1.5rem;
   }
