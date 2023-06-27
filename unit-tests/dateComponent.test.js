@@ -1,16 +1,5 @@
 import { describe, expect, it, vitest } from 'vitest'
 import { DateComponent } from '../build/js/dateComponent'
-/**
-// Modulos funciones
-dateComponent en un principio interactua con el modulo erroDom
-(no hereda por que realmente no existe una relacion de padre e hijo) ademas no existen medotos que relaciones e atributos,
-ya que solo vamos a usar los metodos para comprobar si se cumple o no , y pintar los errores.
--ErrorDom: solo va a tener encuenta los errors y los va a pintar en la vista,
-si todos los errores pasan retornar la diferencia entre la fecha ingresada y la fecha actual.
-// ***********************************************************************************************************************************
--RenderComponentDate: este va a recibir el errorDom si es satisfactorio entonces lo pintara y si no pues en un
-principio no haria nada ni deveria rotarnar ningun valor, o retornar null.
- */
 
 describe('dateComponent', () => {
   const objDateComponent = new DateComponent()
