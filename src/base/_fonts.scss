@@ -40,7 +40,7 @@ p {
   margin-bottom: -2.8rem;
 
   @include layout.media-break() {
-    font-size: 1em;
+    font-size: 3em;
     margin-bottom: -1.5rem;
   }
 }
