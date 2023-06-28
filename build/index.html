@@ -8,7 +8,10 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./assets/images/favicon-32x32.png" />
+      href="./assets/images/favicon-31x32.png" />
+      <script type="module" src="./js/dateComponent.mjs" defer></script>
+      <script type="module" src="./js/handleErrorDom.mjs" defer></script>
+      <script type="module" src="./js/renderObjDate.mjs" defer></script>
     <title>Frontend Mentor | Age calculator app</title>
   </head>
   <body>
@@ -23,7 +26,7 @@
               class="form__input"
               type="number"
               placeholder="DD" />
-            <em class="form__error form__error--day"></em>
+            <em class="form__error form__error--day">is not a valid format</em>
           </label>
           <label class="form__label">
             MONTH
@@ -32,7 +35,7 @@
               class="form__input"
               type="number"
               placeholder="MM" />
-            <em class="form__error form__error--month"> </em>
+            <em class="form__error form__error--month">is not a valid format</em>
           </label>
           <label class="form__label">
             YEAR
@@ -41,11 +44,11 @@
               class="form__input"
               type="number"
               placeholder="YYYY" />
-            <em class="form__error form__error--year"> </em>
+            <em class="form__error form__error--year">is not a valid format</em>
           </label>
           <button class="form__button" aria-label="Send the date">
             <img
-              class="form__"
+              class="form__icon"
               src="assets/images/icon-arrow.svg"
               alt
               aria-hidden="true" />
@@ -53,15 +56,15 @@
         </form>
         <div class="card__wrapper">
           <p class="card__result">
-            <span class="card__result card__result--years">38</span>
+            <span class="card__result card__result--years">--</span>
             years
           </p>
           <p class="card__result">
-            <span class="card__result card__result--months">3</span>
+            <span class="card__result card__result--months">--</span>
             months
           </p>
           <p class="card__result">
-            <span class="card__result card__result--days">26</span>
+            <span class="card__result card__result--days">--</span>
             days
           </p>
         </div>
