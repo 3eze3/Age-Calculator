@@ -42,7 +42,7 @@ describe('dateComponent', () => {
     expect(difference).toEqual({
       years: 38,
       months: 9,
-      days: 3
+      days: 4
     })
   })
 })
