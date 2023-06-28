@@ -74,7 +74,7 @@ p {
 }
 @media screen and (max-width: 490px) {
   p {
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: -1.5rem;
   }
 }
@@ -170,7 +170,7 @@ section {
 }
 @media screen and (max-width: 490px) {
   .card__content {
-    padding: 1.87rem;
+    padding: 1.85rem;
     border-radius: 1.75rem 1.75rem 9rem 1.75rem;
   }
 }
