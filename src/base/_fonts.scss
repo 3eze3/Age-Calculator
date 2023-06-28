@@ -2,17 +2,17 @@
 @use "../abtract/mixins" as layout;
 @font-face {
   font-family: popins_bold;
-  src: url("../../build/assets/fonts/Poppins-Bold.ttf");
+  src: url("../build/assets/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: popins_extra_bold;
-  src: url("../../build/assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  src: url("../build/assets/fonts/Poppins-ExtraBoldItalic.ttf");
 }
 
 @font-face {
   font-family: popins_regular;
-  src: url("../../build/assets/fonts/Poppins-Regular.ttf");
+  src: url("../build/assets/fonts/Poppins-Regular.ttf");
 }
 
 body {
