@@ -74,7 +74,7 @@ p {
 }
 @media screen and (max-width: 490px) {
   p {
-    font-size: 1em;
+    font-size: 3em;
     margin-bottom: -1.5rem;
   }
 }
